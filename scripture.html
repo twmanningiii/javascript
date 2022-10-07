@@ -1,24 +1,26 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
+
 <head>
-<meta charset="utf-8">
-<title>Applied Scripture</title>
-<script>
+    <meta charset="utf-8">
+    <title>Applied Scripture</title>
+    <script>
 
-function applyScripture() {
-    
-    let name = document.getElementById('nameInputBox').value;
-    
-    let scripture = name + ", Have not I commanded thee? Be strong and of a good courage;" + " be not afraid, neither be thou dismayed: for the" + " Lord thy God is with thee whithersoever thou goest.";
+        function applyScripture() {
 
-        document.getElementById('outputDiv').innerHTML = scripture;
-}
-</script>
+            let name = document.getElementById('nameInputBox').value;
+
+            let scripture = name + ", Have not I commanded thee? Be strong and of a good courage;" + " be not afraid, neither be thou dismayed: for the" + " Lord thy God is with thee whithersoever thou goest.";
+
+            document.getElementById('outputDiv').innerHTML = scripture;
+        }
+    </script>
 </head>
 
-<body>                             
-Please enter your name: <input type="text" id="nameInputBox">    
-<button type="button" onclick="applyScripture()">Verse</button>
-<div id="outputDiv"></div>
-</body>       
+<body>
+    Please enter your name: <input type="text" id="nameInputBox">
+    <button type="button" onclick="applyScripture()">Verse</button>
+    <div id="outputDiv"></div>
+</body>
+
 </html>
